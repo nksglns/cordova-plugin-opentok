@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opentok/cordova-plugin-opentok.git"
+    "url": "git+https://github.com/nksglns/cordova-plugin-opentok.git"
   },
   "keywords": [
     "opentok",
