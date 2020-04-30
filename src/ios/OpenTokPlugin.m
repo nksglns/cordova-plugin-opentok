@@ -178,6 +178,7 @@
 
     // Set depth location of camera view based on CSS z-index.
     _publisher.view.layer.zPosition = zIndex;
+    _publisher.view.userInteractionEnabled = NO;
 
     if ([cameraPosition isEqualToString:@"back"]) {
         _publisher.cameraPosition = AVCaptureDevicePositionBack;
@@ -203,6 +204,8 @@
         // Set depth location of camera view based on CSS z-index.
         _publisher.view.layer.zPosition = zIndex;
 
+        _publisher.view.userInteractionEnabled = NO;
+
         // If the zIndex is 0(default) bring the view to the top, last one wins.
         // See: https://github.com/saghul/cordova-plugin-iosrtc/blob/5b6a180b324c8c9bac533fa481a457b74183c740/src/PluginMediaStreamRenderer.swift#L191
         if(zIndex == 0) {
@@ -219,6 +222,8 @@
 
         // Set depth location of camera view based on CSS z-index.
         streamInfo.view.layer.zPosition = zIndex;
+
+        streamInfo.view.userInteractionEnabled = NO;
 
         // If the zIndex is 0(default) bring the view to the top, last one wins.
         // See: https://github.com/saghul/cordova-plugin-iosrtc/blob/5b6a180b324c8c9bac533fa481a457b74183c740/src/PluginMediaStreamRenderer.swift#L191
